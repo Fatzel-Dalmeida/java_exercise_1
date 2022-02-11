@@ -1,17 +1,21 @@
-import java.util.scanner
-Public class Launcher {
-    Public static void main(String[] args) {
-        system.out.println("Welcome !");
+import java.util.Scanner;
+public class Launcher {
+    public static void main(String[] args) {
+        System.out.println("Welcome !");
         Scanner a = new Scanner(System.in);
-        if (a == 'quit')
+        Scanner b = new Scanner("quit");
+        int x = 1;
+        while (x == 1)
         {
-            break;
-        }
-
-        else
-        {
-            system.out.println("Unknown Command");
-            break;
+            if (a == b)
+            {
+                break;
+            }
+            else if (a != b)
+            {
+                System.out.println("Unknown Command");
+                continue;
+            }
         }
     }
 }
